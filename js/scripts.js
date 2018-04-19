@@ -1,14 +1,8 @@
-var a = 2;
-var b = 3;
-var a = prompt("Type value a");
-var b = prompt("Type value b");
-var value = (a * a) - (2 * a * b) - (b * b);
-console.log("Result is: "+ value); 
-
-if (value > 0) {
-    console.log("Result positive")
-} else if (value < 0) {
-    console.log("Result negative")
-} else {
-    console.log("Result equals zero")
-}
+var dinosaur = 'triceratops';
+var replacement = dinosaur.toUpperCase();
+var text = 'Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.';
+var text2 = text.replace('Velociraptor', '');
+var replacedText = (replacement + text2);
+var numberChars = replacedText.length/2;
+var halfOftext = replacedText.slice(0, numberChars);
+console.log(halfOftext);
